@@ -1,13 +1,13 @@
 #!/usr/bin/perl
 
 package Crypt::Random::Source::SSLeay;
-use Squirrel;
+use Moose;
 
 extends qw(Crypt::Random::Source::Base);
 
 use Net::SSLeay ();
 
-our $VERSION = "0.01";
+our $VERSION = "0.02";
 
 sub rank { 200 }
 
